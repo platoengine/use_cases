@@ -22,5 +22,6 @@ IF( ANALYZE_PYTHON AND PLATO_PYTHON )
   add_subdirectory(stress_pnorm)
 ENDIF()
 
-IF( ALBANY_MPMD )
+IF( ALBANY_MPMD AND PLATOMAIN )
+  add_subdirectory(4bolt_mpmd)
 ENDIF()

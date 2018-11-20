@@ -1,0 +1,16 @@
+mpirun \
+-np 4 \
+-x PLATO_PERFORMER_ID=0 \
+-x PLATO_INTERFACE_FILE=interface.xml \
+-x PLATO_APP_FILE=platoApp.xml \
+PlatoMain platomain.xml : \
+-np 8 \
+-x PLATO_PERFORMER_ID=1 \
+-x PLATO_INTERFACE_FILE=interface.xml \
+-x PLATO_APP_FILE=albanyApp1.xml \
+AlbanyMPMD nodal_oc1.xml : \
+-np 8 \
+-x PLATO_PERFORMER_ID=2 \
+-x PLATO_INTERFACE_FILE=interface.xml \
+-x PLATO_APP_FILE=albanyApp2.xml \
+AlbanyMPMD nodal_oc2.xml
