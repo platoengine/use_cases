@@ -1,0 +1,91 @@
+<?xml version="1.0"?>
+
+<Operation>
+  <Name>Compute Displacement Solution 1</Name>
+  <Function>ComputeSolution</Function>
+  <ProblemDefinition>homog1.xml</ProblemDefinition>
+  <Output>
+    <ArgumentName>Solution X</ArgumentName>
+  </Output>
+  <Output>
+    <ArgumentName>Solution Y</ArgumentName>
+  </Output>
+  <Output>
+    <ArgumentName>Solution Z</ArgumentName>
+  </Output>
+</Operation>
+
+<Operation>
+  <Name>Compute Displacement Solution 2</Name>
+  <Function>ComputeSolution</Function>
+  <ProblemDefinition>homog2.xml</ProblemDefinition>
+  <Output>
+    <ArgumentName>Solution X</ArgumentName>
+  </Output>
+  <Output>
+    <ArgumentName>Solution Y</ArgumentName>
+  </Output>
+  <Output>
+    <ArgumentName>Solution Z</ArgumentName>
+  </Output>
+</Operation>
+
+<Operation>
+  <Name>Compute Displacement Solution 3</Name>
+  <Function>ComputeSolution</Function>
+  <ProblemDefinition>homog3.xml</ProblemDefinition>
+  <Output>
+    <ArgumentName>Solution X</ArgumentName>
+  </Output>
+  <Output>
+    <ArgumentName>Solution Y</ArgumentName>
+  </Output>
+  <Output>
+    <ArgumentName>Solution Z</ArgumentName>
+  </Output>
+</Operation>
+
+<Operation>
+  <Name>Compute Displacement Solution 4</Name>
+  <Function>ComputeSolution</Function>
+  <ProblemDefinition>homog4.xml</ProblemDefinition>
+  <Output>
+    <ArgumentName>Solution X</ArgumentName>
+  </Output>
+  <Output>
+    <ArgumentName>Solution Y</ArgumentName>
+  </Output>
+  <Output>
+    <ArgumentName>Solution Z</ArgumentName>
+  </Output>
+</Operation>
+
+<Operation>
+  <Name>Compute Displacement Solution 5</Name>
+  <Function>ComputeSolution</Function>
+  <ProblemDefinition>homog5.xml</ProblemDefinition>
+  <Output>
+    <ArgumentName>Solution X</ArgumentName>
+  </Output>
+  <Output>
+    <ArgumentName>Solution Y</ArgumentName>
+  </Output>
+  <Output>
+    <ArgumentName>Solution Z</ArgumentName>
+  </Output>
+</Operation>
+
+<Operation>
+  <Name>Compute Displacement Solution 6</Name>
+  <Function>ComputeSolution</Function>
+  <ProblemDefinition>homog6.xml</ProblemDefinition>
+  <Output>
+    <ArgumentName>Solution X</ArgumentName>
+  </Output>
+  <Output>
+    <ArgumentName>Solution Y</ArgumentName>
+  </Output>
+  <Output>
+    <ArgumentName>Solution Z</ArgumentName>
+  </Output>
+</Operation>

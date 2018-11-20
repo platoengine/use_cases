@@ -1,0 +1,20 @@
+## /home/jrobbin/opt/cubit/15.3/bin/cubitx
+## Cubit Version 15.3
+## Cubit Build 413520
+## Revised 2018-09-20 09:38:41 -0600 (Thu, 20 Sep 2018)
+## Running 11/19/2018 11:16:48 AM
+## Command Options:
+#{bodysize=1}
+#{meshsize=0.04}
+create brick x {bodysize}
+volume all scheme tetmesh
+body all size {meshsize}
+mesh volume all
+sideset 2 surface 6
+nodeset 1 surface 4
+nodeset 2 surface 6
+nodeset 3 surface 3
+nodeset 4 surface 5
+nodeset 5 surface 2
+nodeset 6 surface 1
+export mesh "cube.gen" overwrite

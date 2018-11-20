@@ -1,0 +1,5 @@
+side set ss_2 1
+2 200
+node set ns_1 2
+2 201
+2 210

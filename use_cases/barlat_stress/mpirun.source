@@ -1,0 +1,24 @@
+mpirun \
+-np 4 \
+-x PLATO_PERFORMER_ID=0 \
+-x PLATO_INTERFACE_FILE=interface.xml \
+-x PLATO_APP_FILE=platoApp.xml \
+PlatoMain platoMain.xml : \
+-np 1 \
+-x PLATO_PERFORMER_ID=1 \
+-x PLATO_INTERFACE_FILE=interface.xml \
+-x PLATO_APP_FILE=alexaApp1.xml \
+LGR_MPMD \
+--input-config="soap1.xml" : \
+-np 1 \
+-x PLATO_PERFORMER_ID=2 \
+-x PLATO_INTERFACE_FILE=interface.xml \
+-x PLATO_APP_FILE=alexaApp2.xml \
+LGR_MPMD \
+--input-config="soap2.xml" : \
+-np 1 \
+-x PLATO_PERFORMER_ID=3 \
+-x PLATO_INTERFACE_FILE=interface.xml \
+-x PLATO_APP_FILE=alexaApp3.xml \
+LGR_MPMD \
+--input-config="soap3.xml"
