@@ -1,0 +1,47 @@
+<ParameterList name="Geometry">
+  <Parameter name="Model Type" type="string" value="Parameterized"/>
+  <Parameter name="Number of Subdomains" type="int" value="1"/>
+  <Parameter name="Shape Parameters" type="Array(string)" value="{P0,P1,P2,P3,P4,P5}"/>
+  <Parameter name="Shape Parameter Values" type="Array(double)" value="{96.0,96.0,96.0,6.0,30.0,10.0}"/>
+
+  <ParameterList name="Local Coordinate System">
+    <ParameterList name="Origin">
+      <Parameter name="X" type="string" value="0.5+P0/2.0"/>
+      <Parameter name="Y" type="string" value="0.5+P1/2.0"/>
+      <Parameter name="Z" type="string" value="0.5+P2/2.0"/>
+    </ParameterList>
+    <ParameterList name="Basis">
+      <Parameter name="X Axis" type="Array(string)" value="{ 1.0,  0.0,  0.0 }"/>
+      <Parameter name="Y Axis" type="Array(string)" value="{ 0.0,  1.0,  0.0 }"/>
+      <Parameter name="Z Axis" type="Array(string)" value="{ 0.0,  0.0,  1.0 }"/>
+    </ParameterList>
+  </ParameterList>
+
+  <ParameterList name="Subdomain 0">
+    <Parameter name="Type" type="string" value="Primitive"/>
+    <ParameterList name="Local Coordinate System">
+      <ParameterList name="Origin">
+        <Parameter name="X" type="string" value="-P0/2.0+P5/2.0"/>
+        <Parameter name="Y" type="string" value="-P4"/>
+        <Parameter name="Z" type="string" value="-P4"/>
+      </ParameterList>
+      <ParameterList name="Basis">
+        <Parameter name="X Axis" type="Array(string)" value="{ 1.0,  0.0,  0.0 }"/>
+        <Parameter name="Y Axis" type="Array(string)" value="{ 0.0,  1.0,  0.0 }"/>
+        <Parameter name="Z Axis" type="Array(string)" value="{ 0.0,  0.0,  1.0 }"/>
+      </ParameterList>
+    </ParameterList>
+    <ParameterList name="Primitive">
+      <Parameter name="Type" type="string" value="Cylinder"/>
+      <Parameter name="Radius" type="string" value="P3"/>
+      <Parameter name="Height" type="string" value="P5"/>
+      <Parameter name="Axis" type="string" value="X"/>
+      <Parameter name="Number of Aliases" type="int" value="1"/>
+      <ParameterList name="Alias 0">
+        <Parameter name="Surface Name" type="string" value="Cylinder Wall"/>
+        <Parameter name="Alias Name" type="string" value="Bottom Left Mount"/>
+      </ParameterList>
+    </ParameterList>
+    <Parameter name="Operation" type="string" value="Add"/>
+  </ParameterList>
+</ParameterList>
