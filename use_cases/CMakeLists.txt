@@ -23,5 +23,6 @@ IF( ANALYZE_PYTHON AND PLATO_PYTHON )
 ENDIF()
 
 IF( ALBANY_MPMD AND PLATOMAIN )
-  add_subdirectory(4bolt_mpmd)
+  add_subdirectory(4bolt_mpmd_hex)
+  add_subdirectory(4bolt_mpmd_tet)
 ENDIF()
