@@ -1,4 +1,4 @@
-option( PLATOMAIN     "Flag to turn on compilation of PlatoMain"           OFF )
+option( PLATOMAIN     "Flag to turn on compilation of PlatoMain"            OFF )
 option( PLATOSTATICS  "Flag to turn on compilation of Statics performer"    OFF )
 option( ALBANY_MPMD   "Flag to turn on testing of Albany performer"         OFF )
 option( ANALYZE_MPMD  "Flag to turn on testing of Plato Analyze performer"  OFF )
