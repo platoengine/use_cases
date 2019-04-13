@@ -5,7 +5,7 @@
 ## Running 11/05/2018 02:12:13 PM
 ## Command Options:
 #{ cube_len = 100.0 }
-#{ cube_nel = 41 }
+#{ cube_nel = 21 }
 create brick x {cube_len} y {cube_len} z {cube_len}
 move volume 1 x {cube_len/2.0} y {cube_len/2.0} z {cube_len/2.0}
 body all size {cube_len/cube_nel}

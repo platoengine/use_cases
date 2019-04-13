@@ -233,9 +233,9 @@
   </ParameterList> <!-- end of Problem -->
 
   <ParameterList name="Discretization">
-    <Parameter name="1D Elements" type="int" value="41" />
-    <Parameter name="2D Elements" type="int" value="41" />
-    <Parameter name="3D Elements" type="int" value="41" />
+    <Parameter name="1D Elements" type="int" value="21" />
+    <Parameter name="2D Elements" type="int" value="21" />
+    <Parameter name="3D Elements" type="int" value="21" />
     <Parameter name="1D Scale" type="double" value="100.0" />
     <Parameter name="2D Scale" type="double" value="100.0" />
     <Parameter name="3D Scale" type="double" value="100.0" />
