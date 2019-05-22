@@ -848,7 +848,7 @@
                   </ParameterList>
                 </ParameterList>
               </ParameterList>
-              <Parameter name="Preconditioner Type" type="string" value="Ifpack"/>
+              <Parameter name="Preconditioner Type" type="string" value="Ifpack2"/>
               <ParameterList name="Preconditioner Types">
                 <ParameterList name="Ifpack">
                   <Parameter name="Overlap" type="int" value="2"/>
