@@ -12,7 +12,7 @@
     <Parameter name="Physics"            type="string"  value="Mechanical"/>
     <Parameter name="PDE Constraint"     type="string"  value="Elastostatics"/>
     <Parameter name="Objective"          type="string"  value="My Effective Energy"/>
-    <Parameter name="Linear Constraint"  type="string"  value="My Volume"/>
+    <Parameter name="Constraint"  type="string"  value="My Volume"/>
 
     <Parameter name="Self-Adjoint"       type="bool"    value="false"/>
 
