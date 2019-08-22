@@ -11,6 +11,7 @@ ENDIF()
 IF( ANALYZE_MPMD AND PLATOMAIN )
   add_subdirectory(barlat_stress)
   add_subdirectory(uq_multiperf)
+  add_subdirectory(TMechStressConstrained)
 ENDIF()
 
 IF( ANALYZE_PYTHON AND PLATO_PYTHON )

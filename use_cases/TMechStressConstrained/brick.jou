@@ -1,0 +1,22 @@
+reset
+
+brick x 2 y 1 z 0.25
+webcut volume 1  with plane xplane imprint merge 
+webcut volume all  with plane yplane imprint merge 
+
+vol all size {0.25/8}
+mesh vol all
+htet vol all structured
+
+block 1 vol all
+
+sideset 1 surf 36 28
+sideset 1 name "ss_1"
+
+sideset 2 surf 26 18
+sideset 2 name "ss_2"
+
+sideset 10 tri in surf 33 19 31 25  with x_coord < 0.1 and x_coord > -0.1
+sideset 10 name "ss_10"
+
+list model
