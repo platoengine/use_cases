@@ -36,7 +36,7 @@
       </ParameterList>
     </ParameterList>
 
-    <ParameterList name="Elastostatics">
+    <ParameterList name="Elliptic">
       <Parameter name="Plottable" type="Array(string)" value="{strain}"/>
       <ParameterList name="Penalty Function">
         <Parameter name="Type" type="string" value="SIMP"/>
