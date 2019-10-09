@@ -19,10 +19,9 @@
   
   <ParameterList name="Plato Problem">
     <Parameter name="Physics"            type="string"  value="Mechanical"/>
-    <Parameter name="PDE Constraint"     type="string"  value="Elastostatics"/>
+    <Parameter name="PDE Constraint"     type="string"  value="Elliptic"/>
     <Parameter name="Constraint"         type="string"  value="My Volume"/>
     <Parameter name="Objective"          type="string"  value="My Stress P-Norm"/>
-
     <Parameter name="Self-Adjoint"       type="bool"    value="false"/>
 
 
