@@ -1,7 +1,7 @@
 <mesh>
   <type>unstructured</type>
   <format>exodus</format>
-  <mesh>waveguide1.exo</mesh>
+  <mesh>waveguide.exo</mesh>
   <ignore_node_map>true</ignore_node_map>
   <block>
     <index>7</index>

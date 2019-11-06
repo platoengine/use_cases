@@ -1,6 +1,6 @@
 get_filename_component(testDirName ${CMAKE_CURRENT_SOURCE_DIR} NAME)
 
-Plato_add_test_files("alexaApp.xml;amgx.json;CMakeLists.txt;cube_assoc.txt;cube.gen;cube.jou;output.exo;pnorm_grad.py;stress_pnorm.xml")
+Plato_add_test_files("analyzeApp.xml;amgx.json;CMakeLists.txt;cube_assoc.txt;cube.gen;cube.jou;output.exo;pnorm_grad.py;analyzeInput.xml")
 
 file(COPY ${CMAKE_CURRENT_SOURCE_DIR}/cube.osh DESTINATION ${CMAKE_CURRENT_BINARY_DIR})
 
