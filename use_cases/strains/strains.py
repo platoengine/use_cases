@@ -3,7 +3,7 @@ inputMeshName    = "density.gen"
 inputTimeStep    = 0
 inputFieldName   = "Rho_node"
 
-appFileName = "alexaApp.xml"
+appFileName = "analyzeApp.xml"
 defaultInputFile = "homog1.xml"
 
 cellOperationNames = [ \
