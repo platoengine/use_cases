@@ -9,7 +9,7 @@ from numpy import *
 ctypes.CDLL("libmpi.so",mode=ctypes.RTLD_GLOBAL)
 
 # create global Analyze instance
-analyze = Plato.Analyze("mitchell_tet.xml", "analyzeApp.xml", "2D mitchell")
+analyze = Plato.Analyze("analyzeInput.xml", "analyzeApp.xml", "2D mitchell")
 analyze.initialize();
 
 # create global PlatoServices instance
