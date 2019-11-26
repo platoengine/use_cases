@@ -2,8 +2,14 @@
 
 <Filter>
   <Name>Kernel</Name>
-  <Scale>3.5</Scale>
-  <Absolute>-1.0</Absolute>
+  <Name>KernelThenTANH</Name>
+  <Scale>1.25</Scale>
+  <HeavisideMin>1.0</HeavisideMin>
+  <HeavisideUpdate>2.0</HeavisideUpdate>
+  <HeavisideMax>50.0</HeavisideMax>
+  <UseAdditiveContinuation>True</UseAdditiveContinuation>
+  <StartIteration>20</StartIteration>
+  <UpdateInterval>1</UpdateInterval>
 </Filter>
 
 <Operation>
@@ -81,4 +87,3 @@
     <ArgumentName>Upper Bound Vector</ArgumentName>
   </Output>
 </Operation>
-

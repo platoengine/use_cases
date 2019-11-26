@@ -10,6 +10,7 @@
     <Parameter name="Objective"       type="string"  value="My Stress Constraint"/>
 
     <ParameterList name="Elliptic">
+      <Parameter name="Plottable" type="Array(string)" value="{Vonmises}"/>
       <ParameterList name="Penalty Function">
         <Parameter name="Type" type="string" value="SIMP"/>
         <Parameter name="Exponent" type="double" value="3.0"/>
@@ -21,13 +22,12 @@
       <Parameter name="Type" type="string" value="Scalar Function"/>
       <Parameter name="Scalar Function Type" type="string" value="Stress Constraint General"/>
       <Parameter name="Stress Limit" type="double" value="3e6"/>
-      <Parameter name="Initial Penalty" type="double" value="3"/>
+      <Parameter name="Initial Penalty" type="double" value="2"/>
       <Parameter name="Penalty Upper Bound" type="double" value="10000"/>
-      <Parameter name="Penalty Expansion Multiplier" type="double" value="1.5"/>
+      <Parameter name="Penalty Expansion Multiplier" type="double" value="1.25"/>
     </ParameterList>
 
     <ParameterList name="Material Model">
-      <Parameter  name="Density" type="double" value="1e3"/>
       <ParameterList name="Isotropic Linear Elastic">
         <Parameter  name="Poissons Ratio" type="double" value="0.3"/>
         <Parameter  name="Youngs Modulus" type="double" value="1e9"/>

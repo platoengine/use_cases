@@ -94,6 +94,8 @@
   <UserName>PlatoMain</UserName>
 </SharedData>
 
+<!-- DEFINE STAGES -->
+
 <Stage>
   <Name>Set Lower Bounds</Name>
   <Input>
@@ -282,35 +284,23 @@
   </Output>
 </Stage>
 
+<!-- DEFINE OPTIMIZER OPTIONS -->
+
 <Optimizer>
   <Package>KSBC</Package>
-  <!--Package>DerivativeChecker</Package-->
-  <!--CheckGradient>true</CheckGradient-->
+
   <Options>
-    <KSTrustRegionExpansionFactor>4</KSTrustRegionExpansionFactor>
-    <KSTrustRegionContractionFactor>0.5</KSTrustRegionContractionFactor>
-    <KSMaxTrustRegionIterations>5</KSMaxTrustRegionIterations>
-    <KSInitialRadiusScale>0.25</KSInitialRadiusScale>
-    <KSMaxRadiusScale>0.9</KSMaxRadiusScale>
-    <HessianType>disabled</HessianType>
-    <MinTrustRegionRadius>1e-12</MinTrustRegionRadius>
-    <KSOuterGradientTolerance>1e-11</KSOuterGradientTolerance>
-    <KSOuterStationarityTolerance>1e-11</KSOuterStationarityTolerance>
-    <KSOuterStagnationTolerance>1e-11</KSOuterStagnationTolerance>
-    <KSOuterControlStagnationTolerance>1e-11</KSOuterControlStagnationTolerance>
-    <KSOuterActualReductionTolerance>1e-11</KSOuterActualReductionTolerance>
     <ProblemUpdateFrequency>5</ProblemUpdateFrequency>
-    <DisablePostSmoothing>true</DisablePostSmoothing>
-    <KSTrustRegionRatioLow>0.05</KSTrustRegionRatioLow>
-    <KSTrustRegionRatioMid>0.2</KSTrustRegionRatioMid>
-    <KSTrustRegionRatioUpper>0.45</KSTrustRegionRatioUpper>
   </Options>
+
   <Output>
     <OutputStage>Output To File</OutputStage>
   </Output>
+
   <UpdateProblemStage>
     <Name>Update Problem</Name>
   </UpdateProblemStage>
+
   <OptimizationVariables>
     <ValueName>Controls</ValueName>
     <FilteredName>Topology</FilteredName>
@@ -322,17 +312,20 @@
     <SetLowerBoundsStage>Set Lower Bounds</SetLowerBoundsStage>
     <SetUpperBoundsStage>Set Upper Bounds</SetUpperBoundsStage>
   </OptimizationVariables>
+
   <Objective>
     <ValueName>StressObjValue</ValueName>
     <ValueStageName>Stress Objective Stage</ValueStageName>
     <GradientName>StressObjGrad</GradientName>
     <GradientStageName>Stress Objective Grad Stage</GradientStageName>
   </Objective>
+
   <BoundConstraint>
     <Upper>1.0</Upper>
     <Lower>0</Lower>
   </BoundConstraint>
+
   <Convergence>
-    <MaxIterations>170</MaxIterations>
+    <MaxIterations>100</MaxIterations>
   </Convergence>
 </Optimizer>
