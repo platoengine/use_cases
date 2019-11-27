@@ -20,8 +20,8 @@
     <ParameterList name="My Stress Constraint">
       <Parameter name='Type' type='string' value='Scalar Function'/>
       <Parameter name='Scalar Function Type' type='string' value='Stress Constraint'/>
-      <Parameter name="Stress Limit" type="double" value="9e6"/>
-      <Parameter name="Initial Penalty" type="double" value="5e2"/>
+      <Parameter name="Stress Limit" type="double" value="1.0e7"/>
+      <Parameter name="Initial Penalty" type="double" value="1e2"/>
       <Parameter name="Penalty Upper Bound" type="double" value="1000000"/>
       <Parameter name="Penalty Expansion Multiplier" type="double" value="1.1"/>
     </ParameterList>

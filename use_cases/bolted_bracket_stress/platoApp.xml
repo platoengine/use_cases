@@ -2,10 +2,14 @@
 
 <Filter>
   <Name>Kernel</Name>
-  <!--Scale>3.75</Scale-->
-  <!--Scale>3</Scale-->
-  <Scale>2.5</Scale>
-  <Absolute>-1.0</Absolute>
+  <Name>KernelThenTANH</Name>
+  <Scale>2</Scale>
+  <HeavisideMin>1.0</HeavisideMin>
+  <HeavisideUpdate>2.0</HeavisideUpdate>
+  <HeavisideMax>50.0</HeavisideMax>
+  <UseAdditiveContinuation>True</UseAdditiveContinuation>
+  <StartIteration>20</StartIteration>
+  <UpdateInterval>1</UpdateInterval>
 </Filter>
 
 <Operation>
