@@ -1,5 +1,5 @@
 get_filename_component(testDirName ${CMAKE_CURRENT_SOURCE_DIR} NAME)
-Plato_add_test_files("CMakeLists.txt;analyzeApp.xml;analyzeInput.xml;amgx.json;waveguide.exo;waveguide.cub;interface.xml;platoApp.xml;platoMain.xml;mpirun.source")
+Plato_add_test_files("CMakeLists.txt;analyzeApp.xml;analyzeInput.xml;amgx.json;waveguide.exo;interface.xml;platoApp.xml;platoMain.xml;mpirun.source")
 
 set( COMMAND1 "source mpirun.source" )
 set( COMMANDS "${COMMAND1}" )
