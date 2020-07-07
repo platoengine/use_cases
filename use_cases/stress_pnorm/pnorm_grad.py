@@ -16,8 +16,8 @@ import ctypes
 ctypes.CDLL("libmpi.so",mode=ctypes.RTLD_GLOBAL)
 
 # load Plato module and create Analyze instance
-import Plato
-analyze = Plato.Analyze("analyzeInput.xml", "analyzeApp.xml", "pnorm")
+import PlatoPython
+analyze = PlatoPython.Analyze("analyzeInput.xml", "analyzeApp.xml", "pnorm")
 analyze.initialize();
 
 # load density field from mesh

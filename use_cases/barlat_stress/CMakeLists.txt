@@ -1,7 +1,5 @@
 get_filename_component(testDirName ${CMAKE_CURRENT_SOURCE_DIR} NAME)
-Plato_add_test_files("analyzeApp1.xml;analyzeApp2.xml;analyzeApp3.xml;amgx.json;bolted_bracket_assoc1.txt;bolted_bracket_assoc2.txt;bolted_bracket_assoc3.txt;bolted_bracket.gen;bolted_bracket.gen.4.0;bolted_bracket.gen.4.1;bolted_bracket.gen.4.2;bolted_bracket.gen.4.3;CMakeLists.txt;interface.xml;mpirun.source;platoApp.xml;platoMain.xml;analyzeInput1.xml;analyzeInput2.xml;analyzeInput3.xml")
-
-file(COPY ${CMAKE_CURRENT_SOURCE_DIR}/bolted_bracket.osh DESTINATION ${CMAKE_CURRENT_BINARY_DIR})
+Plato_add_test_files("analyzeApp1.xml;analyzeApp2.xml;analyzeApp3.xml;amgx.json;bolted_bracket.exo;bolted_bracket.exo.4.0;bolted_bracket.exo.4.1;bolted_bracket.exo.4.2;bolted_bracket.exo.4.3;CMakeLists.txt;interface.xml;mpirun.source;platoApp.xml;platoMain.xml;analyzeInput1.xml;analyzeInput2.xml;analyzeInput3.xml")
 
 set( COMMAND1 "source mpirun.source" )
 set( COMMANDS "${COMMAND1}" )

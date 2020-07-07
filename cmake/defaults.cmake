@@ -6,11 +6,10 @@ option( ANALYZE_MPMD   "Flag to turn on testing of Plato Analyze performer"     
 option( ANALYZE_PYTHON "Flag to turn on testing of Plato Analyze python interface" OFF )
 option( ALBANY         "Flag to turn on testing of Albany standalone"              OFF )
 option( ANALYZE        "Flag to turn on testing of Plato Analyze standalone"       OFF )
-option( SEACAS         "Seacas tools"                                              OFF )
 
 set(  PLATOMAIN_BINARY     PlatoMain     )
 set(  PLATOSTATICS_BINARY  PlatoStatics  )
 set(  ALBANY_MPMD_BINARY   AlbanyMPMD    )
-set(  ANALYZE_MPMD_BINARY  LGR_MPMD      )
+set(  ANALYZE_MPMD_BINARY  analyze_MPMD  )
 set(  ALBANY_BINARY        Albany        )
-set(  ANALYZE_BINARY       lgr           )
+set(  ANALYZE_BINARY       analyze       )

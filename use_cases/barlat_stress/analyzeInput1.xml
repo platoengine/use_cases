@@ -2,28 +2,14 @@
   <Parameter name="Physics" type="string" value="Plato Driver"/>
   <Parameter  name="Spatial Dimension"    type="int"    value="3"/>
 
-  <Parameter name="Input Mesh" type="string" value="./bolted_bracket.osh"/>
+  <Parameter name="Input Mesh" type="string" value="./bolted_bracket.exo"/>
 
-  <ParameterList name="Visualization">
-    <Parameter name="Index Viz By Time" type="bool" value="false"/>
-    <ParameterList name="Tags">
-      <Parameter name="Node" type="Array(string)" value="{coordinates,displacement}"/>
-      <Parameter name="Element" type="Array(string)" value="{}"/>
-    </ParameterList>
-  </ParameterList>
-
-  <ParameterList  name="Associations">
-    <Parameter name="File" type="string" value="./bolted_bracket_assoc1.txt"/>
-  </ParameterList>
-
-  
   <ParameterList name="Plato Problem">
     <Parameter name="Physics"            type="string"  value="Mechanical"/>
     <Parameter name="PDE Constraint"     type="string"  value="Elliptic"/>
     <Parameter name="Constraint"         type="string"  value="My Volume"/>
     <Parameter name="Objective"          type="string"  value="My Internal Elastic Energy"/>
     <Parameter name="Self-Adjoint"       type="bool"    value="true"/>
-
 
     <ParameterList name="My Volume">
       <Parameter name='Type' type='string' value='Scalar Function'/> 

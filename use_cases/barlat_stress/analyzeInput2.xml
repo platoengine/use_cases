@@ -2,20 +2,14 @@
   <Parameter name="Physics" type="string" value="Plato Driver"/>
   <Parameter  name="Spatial Dimension"    type="int"    value="3"/>
 
-  <Parameter name="Input Mesh" type="string" value="./bolted_bracket.osh"/>
+  <Parameter name="Input Mesh" type="string" value="./bolted_bracket.exo"/>
 
-  <ParameterList  name="Associations">
-    <Parameter name="File" type="string" value="./bolted_bracket_assoc2.txt"/>
-  </ParameterList>
-
-  
   <ParameterList name="Plato Problem">
     <Parameter name="Physics"            type="string"  value="Thermal"/>
-    <Parameter name="PDE Constraint"     type="string"  value="Thermostatics"/>
+    <Parameter name="PDE Constraint"     type="string"  value="Elliptic"/>
     <Parameter name="Constraint"         type="string"  value="My Volume"/>
     <Parameter name="Objective"          type="string"  value="My Internal Thermal Energy"/>
     <Parameter name="Self-Adjoint"       type="bool"    value="true"/>
-
 
     <ParameterList name="My Volume">
       <Parameter name='Type' type='string' value='Scalar Function'/> 
@@ -37,7 +31,7 @@
       </ParameterList>
     </ParameterList>
 
-    <ParameterList name="Thermostatics">
+    <ParameterList name="Elliptic">
       <ParameterList name="Penalty Function">
         <Parameter name="Type" type="string" value="SIMP"/>
         <Parameter name="Exponent" type="double" value="3.0"/>
@@ -64,12 +58,6 @@
         <Parameter  name="Type"     type="string" value="Zero Value"/>
         <Parameter  name="Sides"    type="string" value="ns_1"/>
       </ParameterList>
-<!--
-      <ParameterList  name="Fixed Temperature Boundary Condition">
-        <Parameter  name="Type"     type="string" value="Zero Value"/>
-        <Parameter  name="Sides"    type="string" value="ns_10"/>
-      </ParameterList>
--->
     </ParameterList>
   </ParameterList>
 

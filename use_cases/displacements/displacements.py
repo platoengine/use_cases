@@ -27,8 +27,8 @@ ctypes.CDLL("libmpi.so",mode=ctypes.RTLD_GLOBAL)
 
 
 # load Plato module and create Analyze instance
-import Plato
-analyze = Plato.Analyze(defaultInputFile, appFileName, "homog")
+import PlatoPython
+analyze = PlatoPython.Analyze(defaultInputFile, appFileName, "homog")
 analyze.initialize();
 
 # load density field from mesh
