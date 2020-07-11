@@ -1,3 +1,4 @@
 *.exo filter=lfs diff=lfs merge=lfs -text
+*.exo.* filter=lfs diff=lfs merge=lfs -text
 *.gen filter=lfs diff=lfs merge=lfs -text
 *.osh filter=lfs diff=lfs merge=lfs -text

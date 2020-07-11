@@ -1,10 +1,11 @@
-reset
+#{mesh_size = 0.25/8}
+#{low_res_mesh_size = 0.25/4}
 
 brick x 2 y 1 z 0.25
 webcut volume 1  with plane xplane imprint merge 
 webcut volume all  with plane yplane imprint merge 
 
-vol all size {0.25/8}
+vol all size {mesh_size}
 mesh vol all
 htet vol all structured
 
@@ -19,4 +20,4 @@ sideset 2 name "ss_2"
 sideset 10 tri in surf 33 19 31 25  with x_coord < 0.1 and x_coord > -0.1
 sideset 10 name "ss_10"
 
-list model
+export mesh "brick_reduced.exo" overwrite

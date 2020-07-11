@@ -17,6 +17,7 @@
 #{bolt_inset=0.375}
 #{mount_radius=0.5}
 #{mount_inset=0.5}
+#{low_res_mesh_size=0.120}
 #{mesh_size=0.045}
 create brick x {base_thickness} y {base_height} z {base_width}
 create brick x {bracket_length} y {base_height} z {bracket_thickness}
