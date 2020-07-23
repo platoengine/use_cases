@@ -5,39 +5,37 @@
   <Parameter name="Input Mesh" type="string" value="brick_reduced.exo"/>
 
   <ParameterList name="Plato Problem">
-    <Parameter name="Physics"            type="string"  value="Thermomechanical"/>
-    <Parameter name="PDE Constraint"     type="string"  value="Elliptic"/>
-    <Parameter name="Constraint"  type="string"  value="My Volume"/>
-    <Parameter name="Objective"          type="string"  value="My Objective"/>
+    <Parameter name="Physics"        type="string" value="Thermomechanical"/>
+    <Parameter name="PDE Constraint" type="string" value="Elliptic"/>
+    <Parameter name="Self-Adjoint"   type="bool"   value="false"/>
 
-    <Parameter name="Self-Adjoint"       type="bool"    value="false"/>
-
-    <ParameterList name="My Volume">
-      <Parameter name='Type' type='string' value='Scalar Function'/> 
-      <Parameter name='Scalar Function Type' type='string' value='Volume'/>
-      <ParameterList name="Penalty Function">
-        <Parameter name="Type" type="string" value="SIMP"/>
-        <Parameter name="Exponent" type="double" value="1.0"/>
-        <Parameter name="Minimum Value" type="double" value="0.0"/>
+    <ParameterList name="Criteria">
+      <ParameterList name="Volume">
+        <Parameter name='Type' type='string' value='Scalar Function'/> 
+        <Parameter name='Scalar Function Type' type='string' value='Volume'/>
+        <ParameterList name="Penalty Function">
+          <Parameter name="Type" type="string" value="SIMP"/>
+          <Parameter name="Exponent" type="double" value="1.0"/>
+          <Parameter name="Minimum Value" type="double" value="0.0"/>
+        </ParameterList>
       </ParameterList>
-    </ParameterList>
 
-    <ParameterList name="My Objective">
-        <Parameter name="Type" type="string" value="Weighted Sum"/>
-        <Parameter name="Functions" type="Array(string)" value="{My Volume,My Stress Constraint Quadratic}"/>
-        <Parameter name="Weights" type="Array(double)" value="{1.0,5.0e4}"/>
-    </ParameterList>
-
-    <ParameterList name="My Internal Thermoelastic Energy">
-      <Parameter name='Type' type='string' value='Scalar Function'/> 
-      <Parameter name='Scalar Function Type' type='string' value='Internal Thermoelastic Energy'/>
-      <ParameterList name="Penalty Function">
-        <Parameter name="Type" type="string" value="SIMP"/>
-        <Parameter name="Exponent" type="double" value="3.0"/>
+      <ParameterList name="Objective">
+          <Parameter name="Type" type="string" value="Weighted Sum"/>
+          <Parameter name="Functions" type="Array(string)" value="{Volume, Stress}"/>
+          <Parameter name="Weights" type="Array(double)" value="{1.0, 5.0e4}"/>
       </ParameterList>
-    </ParameterList>
 
-    <ParameterList name="My Stress Constraint Quadratic">
+      <ParameterList name="Internal Energy">
+        <Parameter name='Type' type='string' value='Scalar Function'/> 
+        <Parameter name='Scalar Function Type' type='string' value='Internal Thermoelastic Energy'/>
+        <ParameterList name="Penalty Function">
+          <Parameter name="Type" type="string" value="SIMP"/>
+          <Parameter name="Exponent" type="double" value="3.0"/>
+        </ParameterList>
+      </ParameterList>
+
+      <ParameterList name="Stress">
         <Parameter name="Type" type="string" value="Scalar Function"/>
         <Parameter name="Scalar Function Type" type="string" value="Stress Constraint Quadratic"/>
         <Parameter name="Local Measure" type="string" value="VonMises"/>
@@ -45,6 +43,7 @@
         <Parameter name="Initial Penalty" type="double" value="1.0"/>
         <Parameter name="Penalty Upper Bound" type="double" value="1e4"/>
         <Parameter name="Penalty Expansion Multiplier" type="double" value="1.05"/>
+      </ParameterList>
     </ParameterList>
 
     <ParameterList name="Elliptic">

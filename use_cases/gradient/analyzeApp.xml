@@ -2,9 +2,11 @@
 
 <Operation>
   <Name>Compute Volume</Name>
-  <Function>ComputeConstraint</Function>
+  <Function>ComputeCriterion</Function>
+  <Criterion>Volume</Criterion>
   <ProblemDefinition>homog1.xml</ProblemDefinition>
   <Output>
+    <Argument>Value</Argument>
     <ArgumentName>Constraint Value</ArgumentName>
   </Output>
   <Output>
@@ -14,126 +16,154 @@
 
 <Operation>
   <Name>Compute Volume Value</Name>
-  <Function>ComputeConstraintValue</Function>
+  <Function>ComputeCriterionValue</Function>
+  <Criterion>Volume</Criterion>
   <ProblemDefinition>homog1.xml</ProblemDefinition>
   <Output>
+    <Argument>Value</Argument>
     <ArgumentName>Constraint Value</ArgumentName>
   </Output>
 </Operation>
 
 <Operation>
   <Name>Compute Volume Gradient</Name>
-  <Function>ComputeConstraintGradient</Function>
+  <Function>ComputeCriterionGradient</Function>
+  <Criterion>Volume</Criterion>
   <ProblemDefinition>homog1.xml</ProblemDefinition>
   <Output>
+    <Argument>Gradient</Argument>
     <ArgumentName>Constraint Gradient</ArgumentName>
   </Output>
 </Operation>
 
 <Operation>
   <Name>Compute Effective Energy 1</Name>
-  <Function>ComputeObjective</Function>
+  <Function>ComputeCriterion</Function>
+  <Criterion>Effective Energy</Criterion>
   <ProblemDefinition>homog1.xml</ProblemDefinition>
   <Output>
+    <Argument>Value</Argument>
     <ArgumentName>Objective Value</ArgumentName>
   </Output>
 </Operation>
 
 <Operation>
   <Name>Compute Effective Energy 2</Name>
-  <Function>ComputeObjective</Function>
+  <Function>ComputeCriterion</Function>
+  <Criterion>Effective Energy</Criterion>
   <ProblemDefinition>homog2.xml</ProblemDefinition>
   <Output>
+    <Argument>Value</Argument>
     <ArgumentName>Objective Value</ArgumentName>
   </Output>
 </Operation>
 
 <Operation>
   <Name>Compute Effective Energy 3</Name>
-  <Function>ComputeObjective</Function>
+  <Function>ComputeCriterion</Function>
+  <Criterion>Effective Energy</Criterion>
   <ProblemDefinition>homog3.xml</ProblemDefinition>
   <Output>
+    <Argument>Value</Argument>
     <ArgumentName>Objective Value</ArgumentName>
   </Output>
 </Operation>
 
 <Operation>
   <Name>Compute Effective Energy 4</Name>
-  <Function>ComputeObjective</Function>
+  <Function>ComputeCriterion</Function>
+  <Criterion>Effective Energy</Criterion>
   <ProblemDefinition>homog4.xml</ProblemDefinition>
   <Output>
+    <Argument>Value</Argument>
     <ArgumentName>Objective Value</ArgumentName>
   </Output>
 </Operation>
 
 <Operation>
   <Name>Compute Effective Energy 5</Name>
-  <Function>ComputeObjective</Function>
+  <Function>ComputeCriterion</Function>
+  <Criterion>Effective Energy</Criterion>
   <ProblemDefinition>homog5.xml</ProblemDefinition>
   <Output>
+    <Argument>Value</Argument>
     <ArgumentName>Objective Value</ArgumentName>
   </Output>
 </Operation>
 
 <Operation>
   <Name>Compute Effective Energy 6</Name>
-  <Function>ComputeObjective</Function>
+  <Function>ComputeCriterion</Function>
+  <Criterion>Effective Energy</Criterion>
   <ProblemDefinition>homog6.xml</ProblemDefinition>
   <Output>
+    <Argument>Value</Argument>
     <ArgumentName>Objective Value</ArgumentName>
   </Output>
 </Operation>
 
 <Operation>
   <Name>Compute Effective Energy 1 Value</Name>
-  <Function>ComputeObjectiveValue</Function>
+  <Function>ComputeCriterionValue</Function>
+  <Criterion>Effective Energy</Criterion>
   <ProblemDefinition>homog1.xml</ProblemDefinition>
   <Output>
+    <Argument>Value</Argument>
     <ArgumentName>Objective Value</ArgumentName>
   </Output>
 </Operation>
 
 <Operation>
   <Name>Compute Effective Energy 2 Value</Name>
-  <Function>ComputeObjectiveValue</Function>
+  <Function>ComputeCriterionValue</Function>
+  <Criterion>Effective Energy</Criterion>
   <ProblemDefinition>homog2.xml</ProblemDefinition>
   <Output>
+    <Argument>Value</Argument>
     <ArgumentName>Objective Value</ArgumentName>
   </Output>
 </Operation>
 
 <Operation>
   <Name>Compute Effective Energy 3 Value</Name>
-  <Function>ComputeObjectiveValue</Function>
+  <Function>ComputeCriterionValue</Function>
+  <Criterion>Effective Energy</Criterion>
   <ProblemDefinition>homog3.xml</ProblemDefinition>
   <Output>
+    <Argument>Value</Argument>
     <ArgumentName>Objective Value</ArgumentName>
   </Output>
 </Operation>
 
 <Operation>
   <Name>Compute Effective Energy 4 Value</Name>
-  <Function>ComputeObjectiveValue</Function>
+  <Function>ComputeCriterionValue</Function>
+  <Criterion>Effective Energy</Criterion>
   <ProblemDefinition>homog4.xml</ProblemDefinition>
   <Output>
+    <Argument>Value</Argument>
     <ArgumentName>Objective Value</ArgumentName>
   </Output>
 </Operation>
 
 <Operation>
   <Name>Compute Effective Energy 5 Value</Name>
-  <Function>ComputeObjectiveValue</Function>
+  <Function>ComputeCriterionValue</Function>
+  <Criterion>Effective Energy</Criterion>
   <ProblemDefinition>homog5.xml</ProblemDefinition>
   <Output>
+    <Argument>Value</Argument>
     <ArgumentName>Objective Value</ArgumentName>
   </Output>
 </Operation>
 
 <Operation>
   <Name>Compute Effective Energy 6 Value</Name>
-  <Function>ComputeObjectiveValue</Function>
+  <Function>ComputeCriterionValue</Function>
+  <Criterion>Effective Energy</Criterion>
   <ProblemDefinition>homog6.xml</ProblemDefinition>
   <Output>
+    <Argument>Value</Argument>
     <ArgumentName>Objective Value</ArgumentName>
   </Output>
 </Operation>
@@ -142,72 +172,84 @@
 
 <Operation>
   <Name>Compute Effective Energy 1 Gradient</Name>
-  <Function>ComputeObjectiveGradient</Function>
+  <Function>ComputeCriterionGradient</Function>
+  <Criterion>Effective Energy</Criterion>
   <ProblemDefinition>homog1.xml</ProblemDefinition>
   <Input>
     <ArgumentName>Topology</ArgumentName>
   </Input>
   <Output>
+    <Argument>Gradient</Argument>
     <ArgumentName>Objective Gradient</ArgumentName>
   </Output>
 </Operation>
 
 <Operation>
   <Name>Compute Effective Energy 2 Gradient</Name>
-  <Function>ComputeObjectiveGradient</Function>
+  <Function>ComputeCriterionGradient</Function>
+  <Criterion>Effective Energy</Criterion>
   <ProblemDefinition>homog2.xml</ProblemDefinition>
   <Input>
     <ArgumentName>Topology</ArgumentName>
   </Input>
   <Output>
+    <Argument>Gradient</Argument>
     <ArgumentName>Objective Gradient</ArgumentName>
   </Output>
 </Operation>
 
 <Operation>
   <Name>Compute Effective Energy 3 Gradient</Name>
-  <Function>ComputeObjectiveGradient</Function>
+  <Function>ComputeCriterionGradient</Function>
+  <Criterion>Effective Energy</Criterion>
   <ProblemDefinition>homog3.xml</ProblemDefinition>
   <Input>
     <ArgumentName>Topology</ArgumentName>
   </Input>
   <Output>
+    <Argument>Gradient</Argument>
     <ArgumentName>Objective Gradient</ArgumentName>
   </Output>
 </Operation>
 
 <Operation>
   <Name>Compute Effective Energy 4 Gradient</Name>
-  <Function>ComputeObjectiveGradient</Function>
+  <Function>ComputeCriterionGradient</Function>
+  <Criterion>Effective Energy</Criterion>
   <ProblemDefinition>homog4.xml</ProblemDefinition>
   <Input>
     <ArgumentName>Topology</ArgumentName>
   </Input>
   <Output>
+    <Argument>Gradient</Argument>
     <ArgumentName>Objective Gradient</ArgumentName>
   </Output>
 </Operation>
 
 <Operation>
   <Name>Compute Effective Energy 5 Gradient</Name>
-  <Function>ComputeObjectiveGradient</Function>
+  <Function>ComputeCriterionGradient</Function>
+  <Criterion>Effective Energy</Criterion>
   <ProblemDefinition>homog5.xml</ProblemDefinition>
   <Input>
     <ArgumentName>Topology</ArgumentName>
   </Input>
   <Output>
+    <Argument>Gradient</Argument>
     <ArgumentName>Objective Gradient</ArgumentName>
   </Output>
 </Operation>
 
 <Operation>
   <Name>Compute Effective Energy 6 Gradient</Name>
-  <Function>ComputeObjectiveGradient</Function>
+  <Function>ComputeCriterionGradient</Function>
+  <Criterion>Effective Energy</Criterion>
   <ProblemDefinition>homog6.xml</ProblemDefinition>
   <Input>
     <ArgumentName>Topology</ArgumentName>
   </Input>
   <Output>
+    <Argument>Gradient</Argument>
     <ArgumentName>Objective Gradient</ArgumentName>
   </Output>
 </Operation>
