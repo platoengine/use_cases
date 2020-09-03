@@ -51,9 +51,10 @@ webcut volume all with plane zplane
 imprint all
 merge all
 volume all scheme tetmesh
-volume all size {mesh_size}
+volume all size {low_res_mesh_size}
 mesh volume all
 block 1 volume all
+block 1 name "block_1"
 sideset 2 surface 120 125
 sideset 2 name "ss_1"
 sideset 20 surface 133 144
@@ -62,4 +63,4 @@ nodeset 1 surface 53 59 71 65
 nodeset 1 name "ns_1"
 nodeset 10 surface 145 131 121 123
 nodeset 10 name "ns_2"
-export mesh "bolted_bracket.exo" overwrite
+export mesh "bolted_bracket_lowres.exo" overwrite

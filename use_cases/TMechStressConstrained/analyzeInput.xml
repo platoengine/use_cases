@@ -54,7 +54,17 @@
       </ParameterList>
     </ParameterList>
 
-    <ParameterList name="Material Model">
+    <ParameterList name="Spatial Model">
+      <ParameterList name="Domains">
+        <ParameterList name="Design Volume">
+          <Parameter name="Element Block" type="string" value="block_1"/>
+          <Parameter name="Material Model" type="string" value="Unobtainium"/>
+        </ParameterList>
+      </ParameterList>
+    </ParameterList>
+
+    <ParameterList name="Material Models">
+    <ParameterList name="Unobtainium">
       <ParameterList name="Thermoelastic">
         <ParameterList name="Elastic Stiffness">
           <Parameter  name="Poissons Ratio" type="double" value="0.3"/>
@@ -64,6 +74,7 @@
         <Parameter  name="Thermal Conductivity" type="double" value="910.0"/>
         <Parameter  name="Reference Temperature" type="double" value="0.0"/>
       </ParameterList>
+    </ParameterList>
     </ParameterList>
   
     <ParameterList  name="Mechanical Natural Boundary Conditions">

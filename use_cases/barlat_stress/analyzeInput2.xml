@@ -40,9 +40,20 @@
       </ParameterList>
     </ParameterList>
 
-    <ParameterList name="Material Model">
-      <ParameterList name="Thermal Conduction">
-        <Parameter  name="Thermal Conductivity" type="double" value="1.0e3"/>
+    <ParameterList name="Spatial Model">
+      <ParameterList name="Domains">
+        <ParameterList name="Design Volume">
+          <Parameter name="Element Block" type="string" value="block_1"/>
+          <Parameter name="Material Model" type="string" value="Unobtainium"/>
+        </ParameterList>
+      </ParameterList>
+    </ParameterList>
+
+    <ParameterList name="Material Models">
+      <ParameterList name="Unobtainium">
+        <ParameterList name="Thermal Conduction">
+          <Parameter  name="Thermal Conductivity" type="double" value="1.0e3"/>
+        </ParameterList>
       </ParameterList>
     </ParameterList>
   

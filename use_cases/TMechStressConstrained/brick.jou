@@ -10,6 +10,7 @@ mesh vol all
 htet vol all structured
 
 block 1 vol all
+block 1 name "block_1"
 
 sideset 1 surf 36 28
 sideset 1 name "ss_1"

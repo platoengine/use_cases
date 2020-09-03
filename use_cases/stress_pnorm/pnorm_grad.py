@@ -23,12 +23,12 @@ analyze.initialize();
 # load density field from mesh
 import exodus
 inMesh = exodus.ExodusDB()
-inMesh.read("cube.gen")
+inMesh.read("cube.exo")
 inputDensity = [0.5 for i in range(inMesh.numNodes)]
 
 # open exodus file for output and configure
 outMesh = exodus.ExodusDB()
-outMesh.read("cube.gen")
+outMesh.read("cube.exo")
 outMesh.elemVarNames = outputElemDataNames;
 outMesh.nodeVarNames = outputNodeDataNames;
 numElemBlocks = 1

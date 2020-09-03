@@ -1,5 +1,5 @@
 # problem setup
-inputMeshName    = "density.gen"
+inputMeshName    = "density.exo"
 inputTimeStep    = 0
 inputFieldName   = "Rho_node"
 
