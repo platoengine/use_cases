@@ -2,7 +2,7 @@ import exodus
 import math
 
 mesh = exodus.ExodusDB()
-mesh.read("cube.gen")
+mesh.read("cube.exo")
 
 mesh.numNodeVars = 1
 mesh.nodeVarNames = ["Rho_node"];
@@ -19,4 +19,4 @@ for nodeIndex in range(mesh.numNodes):
     val = 1.0
   mesh.nodeVars[0][0][nodeIndex] = val
 
-mesh.write("density.gen")
+mesh.write("density.exo")

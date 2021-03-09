@@ -29,8 +29,8 @@
             "postsweeps": 1, 
             "cycle": "W"
         }, 
-        "solver": "PBICGSTAB", 
-        "print_solve_stats": 1, 
+        "solver": "PCG", 
+        "print_solve_stats": 0, 
         "obtain_timings": 0, 
         "max_iters": 1000, 
         "monitor_residual": 1, 

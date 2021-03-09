@@ -29,7 +29,7 @@
             "postsweeps": 1, 
             "cycle": "W"
         }, 
-        "solver": "PBICGSTAB", 
+        "solver": "PCG", 
         "print_solve_stats": 0, 
         "obtain_timings": 0, 
         "max_iters": 1000, 
